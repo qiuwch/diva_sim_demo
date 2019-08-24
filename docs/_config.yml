@@ -1,0 +1,21 @@
+title: DIVA Simulation - JHU
+plugins:
+  - jekyll-include-cache
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: contrast
+
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      # type: docs # Apply to all types
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      toc: true
+      sidebar:
+        nav: "docs"

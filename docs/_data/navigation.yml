@@ -1,0 +1,32 @@
+main:
+  - title: "Getting Started"
+    url: /
+  - title: "About"
+    url: /about/
+
+# documentation links
+docs:
+  - title: Tutorial 
+    children:
+      - title: "Getting started"
+        url: /
+      - title: "ShapeNet Cars"
+        url: /docs/shapenet/
+  - title: Reference
+    children:
+      - title: "Download"
+        url: /docs/download/
+      - title: "Features"
+        url: /docs/feature/
+      - title: "Dataset"
+        url: /docs/dataset/
+  - title: Development
+    children:
+      - title: "Build"
+        url: /docs/dev/
+      - title: "Known Issues"
+        url: /docs/issue/
+  - title: Other
+    children:
+      - title: "Animal"
+        url: /docs/animal/
