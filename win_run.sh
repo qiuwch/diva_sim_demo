@@ -1,0 +1,1 @@
+../AnimalParsing/unrealcv_binary/WindowsNoEditor/AnimalParsing.exe EmptyPlane &
