@@ -3,6 +3,10 @@ title: "Generated Synthetic Dataset"
 toc: true
 ---
 
+Besides data generation tool, we also have pre-generated image dataset.
+
+Images of this dataset can be found in `dropbox shared folder`.
+
 This page shows generated images from the dataset.
 
 ## Pilot Synthetic Image Dataset

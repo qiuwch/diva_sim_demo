@@ -4,7 +4,7 @@
 | Command                | Comment                                  |
 |------------------------|------------------------------------------|
 | vget /unreacv/status   | Get the simulator status                 |
-| vget /camera/0/lit png | Return image from the camera as a binary |
+| vget /camera/{cam_id}/lit png | Return image from the camera as a binary |
 
 ## Object Manipulation
 
@@ -21,9 +21,9 @@
 
 | Command                        | Comment               |
 |--------------------------------|-----------------------|
-| vget /camera/0/lit png         | Get image             |
-| vget /camera/0/object_mask png | Get segmentation mask |
-| vget /camera/0/depth npy       | Get depth             |
+| vget /camera/{cam_id}/lit png         | Get image             |
+| vget /camera/{cam_id}/object_mask png | Get segmentation mask |
+| vget /camera/{cam_id}/depth npy       | Get depth             |
 
 ## Car
 
@@ -33,15 +33,14 @@
 | vset /car/{id}/mesh/id {mesh_id}                              | Set the mesh id of the car   |
 | vset /car/{id}/door/angles {fl} {fr} {bl} {br} {hood} {trunk} | Set door angles              |
 | vset /car/{id}/annotation/obj {r} {g} {b}                     | Set car annotation color     |
-| vset /car/{id}/annotation/obj {r} {g} {b}                     | Set car part annoation color |
-| x                                                             | Control texture of the car   |
 
 ## Advanced Car
 
 | Command                                                                 | Comment                   |
 |-------------------------------------------------------------------------|---------------------------|
-| vset /car/shapenet0/annotation/parts {fl} {fr} {bl} {br} {hood} {trunk} | Set part annotation color |
-| x                                                                       | Control car texture       |
+| vset /car/{obj_id}/annotation/parts {fl} {fr} {bl} {br} {hood} {trunk} | Set part annotation color |
+| vset /car/{obj_id}/mesh/texture {texture_filename}                     | Control car texture       |
+| -                      | Control texture of each car part       |
 | -                                                                       | Get car keypoint          |
 
 ## Shapenet Car
@@ -58,6 +57,12 @@
 |------------------------------------------------------|--------------------------------------------------|
 | vset /human/{id}/mesh {mesh_path}                    | Set the appearance of a human                    |
 | vset /human/{id}/animation/ratio {anim_path} {ratio} | Set the pose of a human using recorded animation |
+| vset /human/{id}/texture | Control texture of the human | 
+| vget /human/{id}/keypoint | Get keypoint |
+| vget /human/{id}/3d_keypoint | Get 3D keypoint |
+| vget /human/{id}/vertex | Get 3D keypoint |
+
+
 
 ## Environment
 
@@ -65,4 +70,4 @@
 |:---------------------------------:|:------------------------:|
 | vset /env/floor/texture {texture} | Set texture of the floor |
 |  vset /env/sky/texture {texture}  | Set texture for the sky  |
-|                 x                 |     Random lighting      |
+|  vset /env/light/random |     Random lighting      |
