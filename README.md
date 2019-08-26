@@ -2,6 +2,8 @@ This repo demonstrates how to use a simulator binary to generate synthetic image
 
 Please see [demo.ipynb](./demo.ipynb) to get started.
 
+![](./example/human_anim.png)
+![](./example/human_mesh.png)
+
 ![](./example/car_shapenet_im.png)
 ![](./example/car_shapenet_seg.png)
-![](./example/human_mesh.png)
