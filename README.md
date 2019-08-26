@@ -1,33 +1,3 @@
-# diva_sim_demo
+This repo demonstrates how to use a simulator binary to generate synthetic images and ground truth for computer vision tasks.
 
-`pip install unrealcv --upgrade`
-
-Demo scripts for running diva simulation system.
-
-Start the simulation binary.
-
-There are a few maps. 
-
-- UrbanCity
-- EmptyPlane
-
-other maps in the scene.
-
-The procedure for generating cars.
-
-Deformable car.
-
-- Spawn a car.
-- Set camera configuration
-- Set scene background
-- Random environment lighting.
-
-Release notes.
-
-## Create car and human
-
-Control car appearance
-
-Control human animation
-
-## Change camera pose
+Please see [demo.ipynb](./demo.ipynb) to get started.
