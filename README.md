@@ -1,5 +1,7 @@
 # diva_sim_demo
 
+`pip install unrealcv --upgrade`
+
 Demo scripts for running diva simulation system.
 
 Start the simulation binary.
