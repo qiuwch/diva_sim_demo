@@ -1,8 +1,3 @@
----
-permalink: /
-toc: true
----
-
 This document covers how to run the simulator and generate data from the binary. It demonstrates how to manipulate a virtual scene with python API and generate images and ground truth.
 
 ## Simulation Binary

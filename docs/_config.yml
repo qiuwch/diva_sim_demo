@@ -1,6 +1,7 @@
 title: DIVA Simulation - JHU
 plugins:
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: contrast
